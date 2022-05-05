@@ -3,11 +3,15 @@
   "type": "module",
   "scripts": {
     "code:check": "eslint .",
-    "start": "node index.js",
+    "start": "supervisor -- index.js -w ./",
     "setup:layers": "cd lambda/layers && npm install && cd ../../",
     "setup:functions": "cd lambda/functions && npm install && cd ../../",
     "setup:http": "cd http && npm install && cd ../",
-    "setup": "npm run step:layers && npm run step:functions && npm run setup:http"
+    "setup": "npm run setup:layers && npm run setup:functions && npm run setup:http"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "supervisor": "^0.12.0"
   },
   "devDependencies": {
     "eslint": "^8.14.0",

@@ -12,6 +12,7 @@ benefit of these file structure is it will be easy to deploy as functions or the
 
 [![Star Count](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Star&query=stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhelloakn%2Fdevelop-aws-lambda-functions-locally)](https://github.com/helloakn/node-multi-authorizer-jwt)
 
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
 
 ## Table of Contents
 - File Structure
