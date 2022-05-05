@@ -1,0 +1,9 @@
+{
+  "name": "http",
+  "type": "commonjs",
+  
+  "dependencies": {
+    "express": "^4.18.1",
+    "lambda": "../lambda"
+  }
+}
