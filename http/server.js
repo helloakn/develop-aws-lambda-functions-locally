@@ -21,6 +21,6 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-require('./routes/generateroute.js')(app)
+require('./routes/routegenerator.js')(app)
 
 module.exports.httpServer = app

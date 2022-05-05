@@ -15,6 +15,8 @@ benefit of these file structure is it will be easy to deploy as functions or the
 
 ## Table of Contents
 - File Structure
+  - Before installation the npm dependences
+  - After installation the npm dependences
 - npm Dependences
 - How to Setup
 - How to Run
@@ -26,40 +28,75 @@ benefit of these file structure is it will be easy to deploy as functions or the
 Structure is base on lambda functions.  
 So we can easily deploy to lambda or ECS or EC2 as the monolith or microservice.  
 We can separate authorizer and functions too.  
-All the services on our code would be functions in Lambda and middleware will be lambda Authorizer as well as all the others are the layers.
+All the services on our code would be functions in Lambda and middleware will be lambda Authorizer as well as all the others are the layers.  
+
+#### Before installation the npm dependences
 ```nth
 .
-├── data                        # dir for sqlite3 database
-|   └── codetest.sqlite3        # sqlite3 db file
-├── resources                   # for documentations resources
-│   └── ...
-├── sc                          # nodejs source code
-│   ├── authorizers             # administrator and customer middlewares
+├── http                        # dir for sqlite3 database
+|   ├── routes                  # sqlite3 db file
+│   │   ├── routegenerator.js
+│   │   └── routelist.js
+|   ├── package.json            # sqlite3 db file
+|   └── server.js               # sqlite3 db file
+├── lambda                      # nodejs source code
+│   ├── functions               # administrator and customer middlewares
 │   │   └── ...                 
-│   ├── common                  # for the common functions
-│   │   └── ...
-│   ├── lib                     # just for system configuration files
-│   │   └── ...
-│   ├── models                  # tables
-│   │   └── ...
-│   ├── routes                  # urls and prefixs
-│   │   └── ...
-│   └── services                # Controllers , we can deploy them to AWS Lambda functions
-│       ├── admin               # For all admin functions
+│   └── layers                  # Controllers , we can deploy them to AWS Lambda functions
+│       ├── v1                  # For all admin functions
+│       │   ├── package.json
 │       │   └── ...
-│       └── user                # For all user functions
+│       └── v2                  # For all user functions
+│           ├── package.json
 │           └── ...
-├── tests                       # api test
+├── resources                   # for documentations
+│   └── ...
+├── .eslintrc.cjs               # for standar code check
+├── package.json 
+├── README.md              
+└── ...
+```
+
+#### After installation the npm dependences
+```nth
+.
+├── http                        # dir for sqlite3 database
+|   ├── routes                  # sqlite3 db file
+│   │   ├── routegenerator.js
+│   │   └── routelist.js
+|   ├── package.json            # sqlite3 db file
+│   ├── node_modules
+│   │   └── ...
+|   └── server.js               # sqlite3 db file
+├── lambda                      # nodejs source code
+│   ├── functions               # administrator and customer middlewares
+│   │   └── ...                 
+│   └── layers                  # Controllers , we can deploy them to AWS Lambda functions
+│       ├── v1                  # For all admin functions
+│       │   ├── package.json
+│           ├── node_modules
+│           │   └── ...
+│       │   └── ...
+│       └── v2                  # For all user functions
+│           ├── package.json
+│           ├── node_modules
+│           │   └── ...
+│           └── ...
+├── resources                   # for documentations
+│   └── ...
+├── .eslintrc.cjs               # for standar code check
+├── package.json 
+├── node_modules
 │   └── ...
 ├── README.md              
 └── ...
 ```
+
 ### npm Dependences
 
 * [cors](https://www.npmjs.com/package/cors) ^2.8.5 - for api cors allown and deny
 * [dotenv](https://www.npmjs.com/package/dotenv) ^16.0.0 - to load environment variable from .env file or sys environment variable
 * [express](https://www.npmjs.com/package/express) ^4.18.1 - for web app
-* [sqlite3](https://www.npmjs.com/package/sqlite3)  ^5.0.6 - to use as local storage  
 * [md5](https://www.npmjs.com/package/md5)  ^2.3.0 - for one way password hex 
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  ^8.5.1 - JWT  
 * [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)  ^6.2.1 - for api doc 
