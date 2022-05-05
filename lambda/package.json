@@ -1,7 +1,0 @@
-{
-  "name": "lambda",
-  "type": "commonjs",
-  "exports": {
-    "./functions/*": "./functions/*"
-  }
-}

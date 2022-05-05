@@ -4,7 +4,10 @@
   "scripts": {
     "code:check": "eslint .",
     "start": "node index.js",
-    "setup": "cd http && npm install && cd ../"
+    "setup:layers": "cd lambda/layers && npm install && cd ../../",
+    "setup:functions": "cd lambda/functions && npm install && cd ../../",
+    "setup:http": "cd http && npm install && cd ../",
+    "setup": "npm run step:layers && npm run step:functions && npm run setup:http"
   },
   "devDependencies": {
     "eslint": "^8.14.0",

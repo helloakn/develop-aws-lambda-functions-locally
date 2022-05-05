@@ -1,0 +1,8 @@
+{
+  "name": "http",
+  "type": "commonjs",
+  
+  "dependencies": {
+    "commonlayer": "../layers/v1"
+  }
+}
