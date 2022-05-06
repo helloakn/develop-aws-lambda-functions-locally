@@ -1,7 +1,5 @@
 {
-  "name": "http",
-  "type": "commonjs",
-  
+  "type": "commonjs", 
   "dependencies": {
     "commonlayer": "../layers/v1"
   }

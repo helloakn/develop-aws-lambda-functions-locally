@@ -94,7 +94,6 @@ All the services on our code would be functions in Lambda and middleware will be
 
 ### npm Dependences
 - Root
-  
   * [supervisor](https://www.npmjs.com/package/supertest)  ^0.12.0 - to restart app on source code changes or crash app
   * [jest](https://www.npmjs.com/package/jest)  ^28.0.3 - for unit testing
   * [supertest](https://www.npmjs.com/package/supertest)  ^6.2.3 - for api testing
@@ -115,7 +114,6 @@ All the services on our code would be functions in Lambda and middleware will be
         * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  ^8.5.1 - JWT 
         * [mysql](https://www.npmjs.com/package/mysql)  ^2.18.1 - for db crud 
         
-         
 ### How to Setup
 We have to install npm dependence to run our program smoothly. 
 pls follow as the singlie line of  the following command.
