@@ -2,7 +2,11 @@
 This is just for simple project.  
 However, you can learn the file structure and strategies for aws lambda to develop in local.  
 
-benefit of these file structure is it will be easy to deploy as functions or the whole project.
+benefit of these file structure is to deploy easily as functions or the whole project.  
+can use for :  
+Molothic ? : yes  
+MicroService ? : yes  
+FAAS ? : yes
 
 [![NodeJs](https://img.shields.io/badge/nodejs-v16.14.2-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
 [![NPM](https://img.shields.io/badge/npm-v8.5.0-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
