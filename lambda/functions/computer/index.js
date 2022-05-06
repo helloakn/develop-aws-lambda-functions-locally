@@ -1,6 +1,6 @@
 // what?
-const config = require('commonlayer/config')
-const { DatabaseConfig } = config
+const { DatabaseConfig } = require('commonlayer')
+
 exports.handler = async (event) => {
   const response = {
     statusCode: 200,

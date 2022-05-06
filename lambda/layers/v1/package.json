@@ -1,11 +1,13 @@
 {
   "name": "layer",
+  "main": "index.layer.js",
   "dependencies": {
     "color": "^4.2.3",
     "dotenv": "^16.0.0",
     "mysql": "^2.18.1"
   },
   "exports": {
+    ".": "./index.layer.js",
     "./config": "./lib/config.js",
     "./model/*": "./database/models/*.table.js"
   }
