@@ -93,10 +93,12 @@ All the services on our code would be functions in Lambda and middleware will be
 ```
 
 ### npm Dependences
-
+- Root
+* [cors](https://www.npmjs.com/package/cors) ^2.8.5 - for api cors allown and deny
+- http
 * [cors](https://www.npmjs.com/package/cors) ^2.8.5 - for api cors allown and deny
 * [dotenv](https://www.npmjs.com/package/dotenv) ^16.0.0 - to load environment variable from .env file or sys environment variable
-* [express](https://www.npmjs.com/package/express) ^4.18.1 - for web app
+- lambda
 * [md5](https://www.npmjs.com/package/md5)  ^2.3.0 - for one way password hex 
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  ^8.5.1 - JWT  
 * [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)  ^6.2.1 - for api doc 
