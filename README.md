@@ -79,8 +79,8 @@ All the services on our code would be functions in Lambda and middleware will be
 │   └── layers                  # Controllers , we can deploy them to AWS Lambda functions
 │       ├── v1                  # For all admin functions
 │       │   ├── package.json
-│           ├── node_modules
-│           │   └── ...
+│       │   ├── node_modules
+│       │   │   └── ...
 │       │   └── ...
 │       └── v2                  # For all user functions
 │           ├── package.json
