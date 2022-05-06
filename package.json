@@ -4,13 +4,12 @@
   "scripts": {
     "code:check": "eslint .",
     "start": "supervisor -- index.js -w ./",
-    "setup:layers": "cd lambda/layers && npm install && cd ../../",
+    "setup:layers:v1": "cd lambda/layers/v1 && npm install && cd ../../../",
     "setup:functions": "cd lambda/functions && npm install && cd ../../",
     "setup:http": "cd http && npm install && cd ../",
-    "setup": "npm run setup:layers && npm run setup:functions && npm run setup:http"
+    "setup": "npm run setup:layers:v1 && npm run setup:functions && npm run setup:http"
   },
   "dependencies": {
-    "dotenv": "^16.0.0",
     "supervisor": "^0.12.0"
   },
   "devDependencies": {

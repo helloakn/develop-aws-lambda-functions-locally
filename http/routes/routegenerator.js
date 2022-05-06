@@ -30,7 +30,7 @@ module.exports = (_app) => {
   }
 
   routelist.forEach(lambda => {
-    console.log('route', lambda)
+    // console.log('route', lambda)
     switch (lambda.method) {
       case 'get':
         _app.route('/hello')
