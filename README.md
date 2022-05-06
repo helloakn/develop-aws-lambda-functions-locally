@@ -143,5 +143,4 @@ We can test the api ourselves.
 ![alt text](resources/swagger.png) 
 
 ## Acknowledgement
-Thank you all for giving me a chance to answer the coding test.  
-I'm looking forward to work with you and I could make a promise that " I would do my best ".
+Thank you all for visiting to my repo. please feel free to contact me.
