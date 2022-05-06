@@ -1,20 +1,21 @@
 # Develop AWS LAMBDA Functions/Layers as Locally
+
+[![NodeJs](https://img.shields.io/badge/nodejs-v16.14.2-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
+[![NPM](https://img.shields.io/badge/npm-v8.5.0-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
+[![Express](https://img.shields.io/badge/express-v^4.17.3-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally)
+[![Language](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=Language&query=language&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhelloakn%2Fdevelop-aws-lambda-functions-locally)](https://github.com/helloakn/develop-aws-lambda-functions-locally)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
+[![Star Count](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Star&query=stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhelloakn%2Fdevelop-aws-lambda-functions-locally)](https://github.com/helloakn/develop-aws-lambda-functions-locally)
+
 This is just for simple project.  
 However, you can learn the file structure and strategies for aws lambda to develop in local.  
 
 benefit of these file structure is to deploy easily as functions or the whole project.  
-can use for :  
-Molothic ? : yes  
-MicroService ? : yes  
-FAAS ? : yes
+can be used for :  
+![](https://img.shields.io/static/v1?label=&message=Molothic&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
+![](https://img.shields.io/static/v1?label=&message=MicroService&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)    
+![](https://img.shields.io/static/v1?label=&message=FAAS&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
 
-[![NodeJs](https://img.shields.io/badge/nodejs-v16.14.2-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
-[![NPM](https://img.shields.io/badge/npm-v8.5.0-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally) 
-[![Express](https://img.shields.io/badge/express-v^4.17.3-green)](https://github.com/helloakn/develop-aws-lambda-functions-locally)  
-
-[![Language](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=Language&query=language&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhelloakn%2Fdevelop-aws-lambda-functions-locally)](https://github.com/helloakn/develop-aws-lambda-functions-locally)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-[![Star Count](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=Star&query=stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhelloakn%2Fdevelop-aws-lambda-functions-locally)](https://github.com/helloakn/node-multi-authorizer-jwt)
 
 
 ## Table of Contents
