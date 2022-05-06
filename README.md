@@ -12,9 +12,9 @@ However, you can learn the file structure and strategies for aws lambda to devel
 
 benefit of these file structure is to deploy easily as functions or the whole project.  
 can be used for :  
-![](https://img.shields.io/static/v1?label=&message=Molothic&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
+![](https://img.shields.io/static/v1?label=&message=Monolith&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
 ![](https://img.shields.io/static/v1?label=&message=MicroService&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)    
-![](https://img.shields.io/static/v1?label=&message=FAAS&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
+![](https://img.shields.io/static/v1?label=&message=FaaS&color=blue) ![](https://img.shields.io/static/v1?label=&message=Yes&color=green)  
 
 
 
