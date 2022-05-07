@@ -7,7 +7,10 @@
     "setup:layers:v1": "cd lambda/layers/v1 && npm install && cd ../../../",
     "setup:functions": "cd lambda/functions && npm install && cd ../../",
     "setup:http": "cd http && npm install && cd ../",
-    "setup": "npm run setup:layers:v1 && npm run setup:functions && npm run setup:http"
+    "setup:main": "npm install",
+    "setup:migrator": "cd migrator && npm install && cd ../",
+    "setup": "npm run setup:layers:v1 && npm run setup:functions && npm run setup:http && npm run setup:migrator && npm run setup:main ",
+    "migrate": "node migrate.js"
   },
   "dependencies": {
     "supervisor": "^0.12.0"
