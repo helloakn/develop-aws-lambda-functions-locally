@@ -1,4 +1,11 @@
 import { Migrator } from './migrator/index.js'
+
+import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 const dbConfig = {
   host: 'localhost',
   user: 'root',
@@ -6,5 +13,6 @@ const dbConfig = {
   password: 'aknakn0091',
   database: 'akn'
 }
-const migrator = new Migrator(dbConfig, './migtest')
-migrator.init()
+const migrationsPath = __dirname + '/migtest'
+const migrator = new Migrator(dbConfig, migrationsPath)
+await migrator.init()
