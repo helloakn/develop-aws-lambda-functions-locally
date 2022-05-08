@@ -1,4 +1,4 @@
-import { Migrator } from './migrator/index.js'
+import { Migrator, Output } from './migrator/index.js'
 
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -15,4 +15,6 @@ const dbConfig = {
 }
 const migrationsPath = __dirname + '/migtest'
 const migrator = new Migrator(dbConfig, migrationsPath)
-await migrator.init()
+const result = await migrator.init()
+Output(result)
+process.exit()
